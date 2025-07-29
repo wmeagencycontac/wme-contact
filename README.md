@@ -20,6 +20,11 @@ A lightweight website for William Morris Endeavor (WME) with minimal backend.
    npm start
    ```
 
+   Or run directly:
+   ```bash
+   node simple-server.js
+   ```
+
 3. Visit: http://localhost:3000
 
 ## Deployment
