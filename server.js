@@ -47,7 +47,7 @@ app.use(express.static('public', {
 
 // Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 app.get('/contact', (req, res) => {
