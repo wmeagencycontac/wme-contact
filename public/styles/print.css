@@ -1,0 +1,137 @@
+/* Print Styles for WME Agency */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+
+    .header,
+    .footer,
+    .navbar-toggler,
+    .btn,
+    .footer-lottie,
+    .lottie-animation {
+        display: none !important;
+    }
+
+    .main {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .hero-plain,
+    .contact-section,
+    .offices-section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .hero-plain-title {
+        font-size: 24pt;
+        margin-bottom: 20pt;
+    }
+
+    .contact-section h3,
+    .offices-section h3 {
+        font-size: 18pt;
+        margin-bottom: 15pt;
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    .location-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 15pt;
+        border: 1pt solid #000;
+        padding: 10pt;
+    }
+
+    .location-item-title {
+        font-size: 14pt;
+        font-weight: bold;
+        margin-bottom: 8pt;
+    }
+
+    .contact-links-title {
+        font-weight: bold;
+        font-size: 11pt;
+        margin-bottom: 5pt;
+    }
+
+    .contact-links-link,
+    .location-item-address,
+    .location-item-phone {
+        font-size: 10pt;
+        margin-bottom: 5pt;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: underline;
+    }
+
+    .container,
+    .container-fluid {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .row {
+        margin: 0 !important;
+    }
+
+    .col,
+    .col-12,
+    .col-md-6,
+    .col-lg-4 {
+        width: 100% !important;
+        padding: 0 !important;
+        float: none !important;
+    }
+
+    /* Two column layout for locations on larger print formats */
+    @media print and (min-width: 8in) {
+        .col-lg-4 {
+            width: 48% !important;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 2%;
+        }
+    }
+
+    /* Page breaks */
+    .offices-section {
+        page-break-before: always;
+        break-before: page;
+    }
+
+    /* Ensure text is readable */
+    .location-item-phone a,
+    .contact-links-link {
+        word-break: break-all;
+    }
+
+    /* Hide decorative elements */
+    .box-shadow,
+    .border-radius,
+    .transition {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        transition: none !important;
+    }
+}
