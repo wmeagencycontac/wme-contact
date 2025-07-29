@@ -2,11 +2,15 @@
 
 A minimal Express.js server to serve the WME Agency contact page as a live website.
 
-## Files
+## Project Structure
 
-- `simple-server.js` - Minimal Express.js server
-- `index.html` - Original WME contact page
-- `package.json` - Dependencies (just Express)
+```
+├── simple-server.js    # Minimal Express server (10 lines)
+├── index.html          # WME contact page HTML
+├── package.json        # Dependencies (just Express)
+├── package-lock.json   # Dependency lock file
+└── node_modules/       # Node.js dependencies
+```
 
 ## Quick Start
 
