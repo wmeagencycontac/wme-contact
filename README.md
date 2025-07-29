@@ -1,6 +1,6 @@
 # WME Agency Website
 
-A lightweight website for William Morris Endeavor (WME) with minimal backend.
+A minimal Express.js server to serve the WME Agency contact page as a live website.
 
 ## Files
 
