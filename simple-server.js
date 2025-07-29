@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // Serve your original HTML
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'contact.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
